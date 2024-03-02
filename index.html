@@ -9,8 +9,13 @@
       import init, { check_ean } from "./pkg/barcode_viewer_wasm.js";
       init().then(() => {
         //greet("WebAssembly");
-        console.log(check_ean("3666154117284"))
+        document.getElementById("result1").innerText = check_ean("3666154117284")
+        document.getElementById("result2").innerText = check_ean("3666154117283")
       });
     </script>
+    <p>Test pour 3666154117284</p>
+    <p id="result1"></p>
+    <p>Test pour 3666154117283</p>
+    <p id="result2"></p>
   </body>
 </html>
