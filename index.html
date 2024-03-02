@@ -6,9 +6,10 @@
   </head>
   <body>
     <script type="module">
-      import init, { greet } from "./pkg/barcode_viewer_wasm.js";
+      import init, { check_ean } from "./pkg/barcode_viewer_wasm.js";
       init().then(() => {
-        greet("WebAssembly");
+        //greet("WebAssembly");
+        console.log(check_ean("3666154117284"))
       });
     </script>
   </body>
