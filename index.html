@@ -6,15 +6,17 @@
   </head>
   <body>
     <script type="module">
-      import init, { check_ean } from "./pkg/barcode_viewer_wasm.js";
+      import init, { check_ean, get_ean_13_barcode_data } from "./pkg/barcode_viewer_wasm.js";
       init().then(() => {
         //greet("WebAssembly");
         document.getElementById("result1").innerText = check_ean("3666154117284")
+        document.getElementById("barcodeValue").innerText = get_ean_13_barcode_data("3666154117284")
         document.getElementById("result2").innerText = check_ean("3666154117283")
       });
     </script>
     <p>Test pour 3666154117284</p>
     <p id="result1"></p>
+    <p id="barcodeValue"></p>
     <p>Test pour 3666154117283</p>
     <p id="result2"></p>
   </body>
