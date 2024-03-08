@@ -17,10 +17,5 @@ features = [
   'Document', 
   'Window', 
   'HtmlCanvasElement' ,
-  'WebGlRenderingContext', 
-  'WebGl2RenderingContext', 
-  'WebGlProgram', 
-  'WebGlShader', 
-  'WebGlBuffer', 
-  'WebGlUniformLocation'
+  'CanvasRenderingContext2d'
 ]
